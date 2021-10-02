@@ -72,7 +72,7 @@
 
 
           <li class="nav-item mt-4">
-            <a href="#" class="nav-link">
+            <a href="logout.php" class="nav-link">
             <i class="fas fa-sign-out-alt nav-icon"></i>
               <p>ออกจากระบบ</p>
             </a>

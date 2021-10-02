@@ -41,30 +41,6 @@
           </li>
 
 
-          <li class="nav-item">
-            <a href="product.php" class="nav-link">
-             <i class="far fa-circle nav-icon"></i>
-              <p>จัดการขนม</p>
-            </a>
-          </li>
-
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-             <i class="far fa-circle nav-icon"></i>
-              <p>จัดการประเภทขนม</p>
-            </a>
-          </li>
-
-
-
-          <li class="nav-item">
-            <a href="order.php" class="nav-link">
-             <i class="far fa-circle nav-icon"></i>
-              <p>จัดการรายการสั่งซื้อ</p>
-            </a>
-          </li>
-
 
 
 

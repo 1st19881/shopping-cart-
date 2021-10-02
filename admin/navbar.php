@@ -13,7 +13,7 @@ $sql_w= "SELECT *
         </li>
 
         <li class="nav-item">
-            <a class="nav-link <?php if ($menu == "index"){echo "active";} ?>" href="index.php"> ระบบหลังบ้าน ขนมบ้านอันน์</a>
+            <a class="nav-link <?php if ($menu == "index"){echo "active";} ?>" href="index.php">  ขนมบ้านอันน์ ( ระบบหลังบ้าน )</a>
         </li>
 
     </ul>
@@ -21,10 +21,10 @@ $sql_w= "SELECT *
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-        <li class="nav-link"><a href="order.php?act=confirm">
+        <!-- <li class="nav-link"><a href="order.php?act=confirm">
                <h5><i class="far fa-bell"></i>
                 <span class="badge badge-warning navbar-badge"><?php echo  $count_w;  ?></span></h5>
-            </a></li>
+            </a></li> -->
     </ul>
 </nav>
 <!--  http://fordev22.com/ -->

@@ -14,7 +14,7 @@ $menu = "employee"
 <section class="content">
 
     <div class="container">
-    <?php 
+        <?php 
   error_reporting( error_reporting() & ~E_NOTICE );
   $act = (isset($_GET['act']) ? $_GET['act'] : '');
     if($act=="add"){
@@ -24,11 +24,13 @@ $menu = "employee"
     }elseif($act=="delete"){
         echo '';
     }else{?>
-            <a href="employee.php?act=add" class="btn btn-primary btn-flat">เพิ่มพนักงาน</a>
-            <?php } 
+    <div class="d-flex justify-content-end">
+    <a href="employee.php?act=add" class="btn btn-outline-primary btn-sm btn-flat">เพิ่มพนักงาน</a>
+    </div>
+        <?php } 
    ?>
-     <div class="col-md-12" style="margin-top: 10px">
-     <?php
+        <div class="col-md-12" style="margin-top: 10px">
+            <?php
             $act = (isset($_GET['act']) ? $_GET['act'] : '');
             if($act=='add'){
             include('employee_add.php');
@@ -41,7 +43,7 @@ $menu = "employee"
             }
             ?>
         </div>
-</div>
+    </div>
 
 </section>
 <!-- /.content -->

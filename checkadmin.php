@@ -46,17 +46,17 @@ session_start();
                         <script>
                             setTimeout(function() {
                             swal({
-                                    title: " ผิดพลาด !!",
-                                    text: " กรุณาลองใหม่อีกครั้ง",
+                                    title: "Login error!!!! !!",
+                                    text: "ผิดพลาด กรุณาลองใหม่อีกครั้ง",
                                     type: "warning"
                                 }, function() {
                                 window.location = "loginadmin.php";
                             });
-                            }, 50);
+                            }, 100);
                         </script>
                         ';
-     
+      
                       }
-     
-        }
+      
+            }
 ?>

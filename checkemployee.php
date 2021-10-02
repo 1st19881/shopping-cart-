@@ -41,22 +41,22 @@ session_start();
                         </script>
                         ';
                           }
-                      }else{
-                        echo '
-                        <script>
-                            setTimeout(function() {
-                            swal({
-                                    title: " ผิดพลาด !!",
-                                    text: " กรุณาลองใหม่อีกครั้ง",
-                                    type: "warning"
-                                }, function() {
-                                window.location = "loginemployee.php";
-                            });
-                            }, 50);
-                        </script>
-                        ';
-     
-                      }
-     
-        }
+                        }else{
+                          echo '
+                          <script>
+                              setTimeout(function() {
+                              swal({
+                                      title: "Login error!!!! !!",
+                                      text: "ผิดพลาด กรุณาลองใหม่อีกครั้ง",
+                                      type: "warning"
+                                  }, function() {
+                                  window.location = "loginemployee.php";
+                              });
+                              }, 100);
+                          </script>
+                          ';
+        
+                        }
+        
+              }
 ?>

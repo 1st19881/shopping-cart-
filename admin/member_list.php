@@ -10,7 +10,7 @@ $i=1;
 	
 ?>
 
-<table class="table table-bordered table-striped datatable  border" align="center">
+<table class="table table-bordered table-striped datatable  table-responsive" align="center">
     <thead>
         <tr class="info">
             <th scope="col">#</th>

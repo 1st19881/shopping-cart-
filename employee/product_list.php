@@ -46,10 +46,10 @@ $i=1;
         <td><img src="../img/<?php echo $row_p['img']; ?>" width="100%" alt=""></td>
         <td>
             <div class="d-flex">
-                <a href="product.php?act=edit&product_id=<?php echo $row_p['product_id']; ?>"
+                <a href="product.php?act=edit&p_id=<?php echo $row_p['p_id']; ?>"
                     class="btn btn-warning btn-flat">แก้ไข</a><a
-                    href="product.php?act=delete&product_id=<?php echo $row_p['product_id']; ?>"
-                    class="btn btn-danger btn-flat">ลบ</a>
+                    href="product.php?act=delete&p_id=<?php echo $row_p['p_id']; ?>"
+                    class="btn btn-danger btn-flat" onclick="return confirm('ต้องการลบหรือไม่?');">ลบ</a>
             </div>
         </td>
     </tr>

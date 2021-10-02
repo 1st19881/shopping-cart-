@@ -1,8 +1,8 @@
 <?php 
-$menu = "product"
+$menu = "admin"
 
 ?>
-<title>จัดการสมาชิก</title>
+<title>จัดการผู้ดูแลระบบ</title>
 
 <?php include("header.php"); ?>
 <!-- Content Header (Page header) -->
@@ -14,8 +14,7 @@ $menu = "product"
 <section class="content">
 
     <div class="container">
-        <div class="row">
-            <?php 
+    <?php 
   error_reporting( error_reporting() & ~E_NOTICE );
   $act = (isset($_GET['act']) ? $_GET['act'] : '');
     if($act=="add"){
@@ -25,13 +24,13 @@ $menu = "product"
     }elseif($act=="delete"){
         echo '';
     }else{?>
-            <a href="member.php?act=add" class="btn btn-primary btn-flat">เพิ่มสมาชิก</a>
-            <?php } 
+    <div class="d-flex justify-content-end">
+        <a href="member.php?act=add" class="btn btn-outline-primary btn-sm btn-flat">เพิ่มสมาชิก</a>
+    </div>
+    <?php } 
    ?>
-
-     <div class="col-md-12" style="margin-top: 10px">
-        <div class="row">
-            <?php
+<br>
+        <?php
             $act = (isset($_GET['act']) ? $_GET['act'] : '');
             if($act=='add'){
             include('member_add.php');
@@ -43,10 +42,7 @@ $menu = "product"
             include('member_list.php');
             }
             ?>
-            </div>
-        </div>
     </div>
-</div>
 
 </section>
 <!-- /.content -->

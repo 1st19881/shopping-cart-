@@ -7,9 +7,9 @@ include('condb.php');
 	// echo '</pre>';
 	// exit;
 
-    $product_id = $_GET['product_id'];
+    $p_id = $_GET['p_id'];
 
-	$sql3 = " DELETE FROM tbl_product WHERE product_id='$product_id' ";
+	$sql3 = " DELETE FROM tbl_product WHERE p_id='$p_id' ";
 	
 	
 	$result = mysqli_query($conn,$sql3) or die ("Error in query: $sql3 " . mysqli_error());
