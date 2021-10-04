@@ -31,7 +31,7 @@ $o_id = $_GET['o_id'];
 <section class="content">
     <div class="container">
         <div class="text-center">
-            <h4>รายละเอียดการแจ้งชำระเงิน</h4><br>
+            <h4>ยกเลิกการสั่งซื้อ</h4><br>
         </div>
         <h5>
             Order ID : <?php echo $rowdetail['o_id']; ?> <br>
@@ -54,7 +54,7 @@ $o_id = $_GET['o_id'];
                 }
             ?>
             <p> หมายเหตุ/เพิ่มเติม : <?php echo $rowdetail['note']; ?></p>
-            <a href="order.php?act=paid" class="btn btn-flat btn-danger  mt-2 mb-3">กลับ</a>
+            <a href="order.php?act=cancel" class="btn btn-flat btn-danger  mt-2 mb-3">กลับ</a>
         </h5>
         <table width="100% border=" 0" align="center" class="table table-bordered  " style="background-color:#F7F7ED">
             <tr>
@@ -83,65 +83,7 @@ $o_id = $_GET['o_id'];
         echo "</tr>";
     ?>
         </table>
-        <br>
-        <h4>ธนาคารที่โอนเงิน</h4>
-        <table class="table table-bordered">
-            <thead class="bg-primary">
-                <tr>
-                    <th width="10%">ธนาคาร</th>
-                    <th>ชื่อธนาคาร</th>
-                    <th>เลขบัญชี</th>
-                    <th>ชื่อเจ้าของบัญชี</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><img src="../img/k.jpg" width="100%" alt=""></td>
-                    <td>กรุงไทย</td>
-                    <td>4091876777</td>
-                    <td>นางสาว กะทิ </td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <br>
-        <h4>รายละเอียดที่แจ้งชำระเงิน</h4>
-        <table class="table table-bordered">
-            <thead class="bg-success">
-                <tr>
-                    <th width="10%">ภาพสลิป</th>
-                    <th>ว/ด/ป</th>
-                    <th>จำนวนที่โอน</th>
-                    <th>สถานะรับของ</th>
-                    <th>รับขนม</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="../slip/<?php echo $rowdetail['o_slip'] ; ?>" target="_blank"><img
-                                src="../slip/<?php echo $rowdetail['o_slip'] ; ?>" width="100%" alt=""></a></td>
-                    <td><?php echo $rowdetail['o_slip_date'] ; ?></td>
-                    <td align="center"><?php echo $rowdetail['o_total'] ; ?></td>
-                    <td> <?php $sa = $rowdetail['status_accept']; 
-                        if($sa==1){
-                            echo "<font color='blue'>รอดำเนินการ</font>";
-                        }
-                        elseif ($sa==2) {
-                        echo "<font color='green'>รับของ </font>";
-                        }
-                        elseif ($sa==3) {
-                            echo "<font color='green'>รับของแล้ว</font>";
-                        }
-                        elseif ($sa==4) {
-                            echo "<font color='red'>ยกเลิก</font>";
-                        }
-                        ?>
-                    <td>
-                        
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+       
     </div>
 </section>
 <!-- /.content -->

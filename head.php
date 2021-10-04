@@ -29,6 +29,13 @@
   <link href="https://fonts.googleapis.com/css?family=Kanit:400" rel="stylesheet">
 
   <link href="assets/plugins/bootstrap-tagsinput/tagsinput.css?v=11" rel="stylesheet" type="text/css">
-  
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 
+<style>
+body{
+  font-family: 'Kanit', sans-serif;
+}
+</style>

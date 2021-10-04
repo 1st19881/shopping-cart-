@@ -13,7 +13,7 @@ $sql_w= "SELECT *
         </li>
 
         <li class="nav-item">
-            <a class="nav-link <?php if ($menu == "index"){echo "active";} ?>" href="index.php"> ระบบหลังบ้าน ขนมบ้านอันน์</a>
+            <a class="nav-link <?php if ($menu == "index"){echo "active";} ?>" href="index.php">  ขนมบ้านอันน์ ( พนักงาน )</a>
         </li>
 
     </ul>

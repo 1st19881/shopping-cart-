@@ -10,7 +10,6 @@ $result = mysqli_query($conn, $query);
 
 	
 ?>
-
 <div class="row">
     <?php while($row_prd = mysqli_fetch_array($result)){?>
     <div class="col-md-3">

@@ -40,7 +40,7 @@ include('condb.php');
                 <div class="d-flex">
                     <?php  
                 $o_id = $rso['o_id'];  //o_id 
-                echo "<a href='payment_detail.php?o_id=$o_id&do=order_detail;' class='btn btn-danger btn-sm btn-flat'>เปิดดู</a>";
+                echo "<a href='order_cancel_detail.php?o_id=$o_id&do=order_detail;' class='btn btn-danger btn-sm btn-flat'>เปิดดู</a>";
                 ?>
                 </div>
             </td>

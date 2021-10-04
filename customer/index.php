@@ -22,6 +22,7 @@ $menu = "index"
     <div class="container">
         <div class="row">
             <div class="col-md-12" style="margin-top: 10px">
+            <h4 class="text-center mb-4">รายการขนมบ้านอันน์</h4>
                 <div class="row">
         <?php
             $act = (isset($_GET['act']) ? $_GET['act'] : '');

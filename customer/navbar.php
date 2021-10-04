@@ -5,7 +5,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link <?php if ($menu == "index"){echo "active";} ?>" href="index.php"> ขนมบ้านอันน์</a>
+            <a class="nav-link <?php if ($menu == "index"){echo "active";} ?>" href="index.php"> ขนมบ้านอันน์ ( ระบบสมาชิก )</a>
         </li>
 
     </ul>
@@ -15,7 +15,7 @@
     <ul class="navbar-nav ml-auto">
         <li class="nav-item ">
             <a href="cart.php" class="nav-link ">
-                <i class="cart.php"></i> ตะกร้าสินค้า ( <?php 
+            <i class="fas fa-shopping-cart"></i> ตะกร้าสินค้า ( <?php 
                         echo (isset($_SESSION['cart']) && count($_SESSION['cart'])) > 0 ? count($_SESSION['cart']):'0';
                     ?> )
             </a>

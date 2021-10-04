@@ -52,7 +52,7 @@ error_reporting( error_reporting() & ~E_NOTICE );
 <!-- Main content -->
 <section class="content">
     <div class="container">
-        <h4>ตะกร้าสินค้า <a class="btn btn-flat btn-primary" href="index.php">กลับหน้ารายการสินค้า</a></h4><br>
+        <h4><i class="fas fa-shopping-cart"></i> ตะกร้าสินค้า </h4><br>
         <form id="frmcart" name="frmcart" method="post" action="?act=update">
             <table class="table table-bordered" width="100%" border="0" align="center" class="square">
                 <tr>
@@ -105,7 +105,7 @@ error_reporting( error_reporting() & ~E_NOTICE );
 	?>
                 <tr>
                     <td colspan="7" align="right">
-
+					<a class="btn btn-flat btn-primary" href="index.php">กลับหน้ารายการสินค้า</a>
                         <input class="btn btn-danger btn-flat" type="button" name="Submit" value="ยกเลิกตะกร้าสินค้า"
                             onclick="window.location='cart.php?act=cancel';" />
                         <?php if($_SESSION['cart']== 0){?>

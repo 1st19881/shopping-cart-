@@ -54,7 +54,7 @@ $o_id = $_GET['o_id'];
             }
         ?>
         </h5>
-        <a href="order.php" class="btn btn-flat btn-danger  mt-2 mb-3">กลับ</a>
+        <a href="order.php?act=waiting" class="btn btn-flat btn-danger  mt-2 mb-3">กลับ</a>
         <table width="100% border=" 0" align="center" class="table table-bordered  " style="background-color:#F7F7ED">
             <tr>
                 <td bgcolor="#F7F7ED">#</td>

@@ -41,7 +41,7 @@ include('condb.php');
                     <?php  
                 $o_id = $rso['o_id'];  //o_id 
                 echo "<a href='order_detail.php?o_id=$o_id&do=order_detail;' class='btn btn-primary btn-sm btn-flat'>เปิดดู</a>";
-                echo "<a href='order_detail.php?o_id=$o_id&do=order_detail;' class='btn btn-danger btn-sm btn-flat' >ยกเลิก </a>";
+                echo "<a href='order_cancel_db.php?o_id=$o_id&do=order_detail;' class='btn btn-danger btn-sm btn-flat' >ยกเลิก </a>";
                 ?>
                 </div>
             </td>

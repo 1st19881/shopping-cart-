@@ -10,6 +10,12 @@ $rs_total = mysqli_query($conn,$sql_total);
 $count_total = mysqli_fetch_array($rs_total);
 
 
+$sql_totalc ="SELECT SUM(a_price) AS pricec        
+FROM acount_list";
+$rs_totalc = mysqli_query($conn,$sql_totalc);
+$count_totalc = mysqli_fetch_array($rs_totalc);
+
+
 $sql_order ="SELECT * FROM order_head";
 $rs_order = mysqli_query($conn,$sql_order);
 $count_order=mysqli_num_rows($rs_order);
@@ -90,9 +96,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -104,9 +107,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -118,9 +118,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -132,9 +129,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -146,9 +140,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -160,9 +151,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -174,9 +162,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -188,9 +173,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -202,9 +184,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -216,9 +195,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -230,12 +206,21 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="small-box bg-info">
+                        <div class="inner">
+                        <h1 class="text-white">บัญชี: <?php echo number_format($count_totalc['pricec']);  ?>  บาท</h1>
+                        <p>บัญชี</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
                     </div>
                 </div>
 
+                
             </div>
 
 

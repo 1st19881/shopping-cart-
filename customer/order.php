@@ -2,7 +2,7 @@
 $menu = "index"
 
 ?>
-<title>หน้าแรก</title>
+<title>ประวัติสั่งซื้อ</title>
 <?php include("header.php"); ?>
 <!-- Content Header (Page header) -->
 <section class="content-header">

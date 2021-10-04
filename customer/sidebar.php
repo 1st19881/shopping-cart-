@@ -64,7 +64,7 @@ $result = mysqli_query($conn, $query);
                 <li class="nav-item">
                     <a href="order.php" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
-                        <p>รายการสั่งซื้อ</p>
+                        <p>ประวัติสั่งซื้อ</p>
                     </a>
                 </li>
 

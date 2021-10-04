@@ -45,7 +45,7 @@ $sql_w= "SELECT *
  $count_all = mysqli_num_rows($result_all );
 
 ?>
-<title>หน้าแรก</title>
+<title>จัดการรายการสั่งซื้อ</title>
 <?php include("header.php"); ?>
 <!-- Content Header (Page header) -->
 <section class="content-header">

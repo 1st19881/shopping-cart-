@@ -9,6 +9,11 @@ WHERE o_status IN(3)";
 $rs_total = mysqli_query($conn,$sql_total);
 $count_total = mysqli_fetch_array($rs_total);
 
+$sql_totalc ="SELECT SUM(a_price) AS pricec        
+FROM acount_list";
+$rs_totalc = mysqli_query($conn,$sql_totalc);
+$count_totalc = mysqli_fetch_array($rs_totalc);
+
 
 $sql_order ="SELECT * FROM order_head";
 $rs_order = mysqli_query($conn,$sql_order);
@@ -79,20 +84,16 @@ $count_employee=mysqli_num_rows($rs_employee);
         </div>
         <br>
         <div class="card-body p-1">
-
             <div class="row">
                 <div class="col-md-4">
                     <div class="small-box bg-info">
                         <div class="inner">
-                            <h1 class="text-white"><?php echo $count_total['total'];  ?>  บาท</h1>
+                            <h1 class="text-white"><?php echo number_format($count_total['total']);  ?>  บาท</h1>
                             <p>รายได้</p>
                         </div>
                         <div class="icon">
-                            <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-dollar-sign"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -102,11 +103,8 @@ $count_employee=mysqli_num_rows($rs_employee);
                             <p>รายการสั่งซื้อ</p>
                         </div>
                         <div class="icon">
-                            <i class="fas fa-shopping-cart"></i>
+                        <i class="far fa-list-alt"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -116,11 +114,8 @@ $count_employee=mysqli_num_rows($rs_employee);
                             <p>รอการชำระเงิน</p>
                         </div>
                         <div class="icon">
-                            <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-hourglass-half"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -132,9 +127,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -146,9 +138,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -160,9 +149,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -174,9 +160,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -188,9 +171,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -202,9 +182,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -216,9 +193,6 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -230,9 +204,17 @@ $count_employee=mysqli_num_rows($rs_employee);
                         <div class="icon">
                             <i class="fas fa-shopping-cart"></i>
                         </div>
-                        <a href="#" class="small-box-footer">
-                            More info <i class="fas fa-arrow-circle-right"></i>
-                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="small-box bg-info">
+                        <div class="inner">
+                        <h1 class="text-white">บัญชี: <?php echo number_format($count_totalc['pricec']);  ?>  บาท</h1>
+                        <p>บัญชี</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
                     </div>
                 </div>
 

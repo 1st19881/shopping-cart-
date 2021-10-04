@@ -3,6 +3,7 @@
 <?php include("header.php"); ?>
 <!-- Main content -->
 <section class="content">
+    <h4 class="text-center mb-4 mt-4">สมัครสมาชิก</h4>
 <div class="container">
     <div class="row">
         <div class="col-md-12 mt-4">
@@ -54,6 +55,7 @@
 
                         <input type="hidden" name="level" value="member">
                         <button type="submit" class="btn btn-success  btn-flat col-2">บันทึก</button>
+                        <a href="index.php" class="btn btn-danger  btn-flat col-2">ยกเลิก</a>
                     </div>
 
                 </div>
